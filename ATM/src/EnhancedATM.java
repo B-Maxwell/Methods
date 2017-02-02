@@ -26,12 +26,12 @@ public class EnhancedATM {
 
 
     void enterChoice() throws Exception {
-        System.out.println("\nHow can we serve you today? (Please select an option 1 -4) \n1. Check Balance \n2. Withdraw Funds \n3. Deposit Funds \n4. Cancel");
+        System.out.println("\nHow can we serve you today? (Please select an option 1 - 4) \n1. Check Balance \n2. Withdraw Funds \n3. Deposit Funds \n4. Cancel");
         int option = input.nextInt();
 
         switch (option) {
 
-            case 1:
+            case 1: //Displays balance
                 System.out.println("\nYour current balance is " + balance);
                 anotherTrans();
                 break;
@@ -44,7 +44,7 @@ public class EnhancedATM {
                 makeDeposit();
                 break;
 
-            case 4:
+            case 4: //Exits session
                 System.out.println("\nThank you " + name + ". Please come again!");
                 break;
 
@@ -74,7 +74,7 @@ public class EnhancedATM {
         System.out.println("\nYour current balance is $" + balance + ". How much would you like to deposit?");
         int funds = input.nextInt();
         balance += funds;
-            System.out.println("\nYou new balance is $" + balance + funds);
+            System.out.println("\nYou new balance is $" + balance);
 
             anotherTrans();
     }

@@ -31,11 +31,11 @@ public class ATM {
 
         switch (option) {
 
-            case 1:
+            case 1: //Checks Balance
                 System.out.println("Your current balance is $100");
                 break;
 
-            case 2:
+            case 2: //Makes withdrawal
                 System.out.println("\nHow much would you like to withdraw?");
                 int funds = input.nextInt();
 
@@ -47,11 +47,11 @@ public class ATM {
 
                 break;
 
-            case 3:
+            case 3: //Exits session
                 System.out.println("\nThank you" + name + ". Please come again!");
                 break;
 
-            default:
+            default: //Throws exception
                 throw new Exception("\nInvalid option. Please select an option 1 - 3");
         }
 
